@@ -1,0 +1,38 @@
+<app-nav>
+</app-nav>
+
+<main>
+  <sky-fluid-grid>
+    <sky-row>
+      <sky-column>
+        <h1>2019 Hall of Fame Selection Committee</h1>
+        <sky-alert alertType="warning">
+          <strong>Warning!</strong> We never check our email.
+        </sky-alert>
+
+        <ng-container *ngFor="let member of team">
+
+          <sky-avatar [name]="member.name"></sky-avatar>
+
+          <sky-key-info [layout]="'horizontal'">
+            <sky-key-info-value>
+              {{ member.name }}
+            </sky-key-info-value>
+            <sky-key-info-label>
+              <a href="mailto:{{ member.email }}">
+                {{ member.email }}
+              </a>
+            </sky-key-info-label>
+          </sky-key-info>
+
+        </ng-container>
+      </sky-column>
+    </sky-row>
+  </sky-fluid-grid>
+</main>
+
+<address style="text-align: center; font-size: large">
+  <p style="font-family: fantasy">North Augusta Sports Commission</p>
+  <strong>Email:</strong>
+  <a href="mailto:nasc2005@gmail.com">nasc2005@gmail.com</a>
+</address>

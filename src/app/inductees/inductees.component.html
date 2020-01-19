@@ -1,0 +1,20 @@
+<app-nav></app-nav>
+<!-- <div *ngFor="let i of inductees">
+   <p><img [src]="i.profile" alt="Photo"></p>
+  ID: {{i.id}} - {{i.name}} Class of {{i.year}}
+</div> -->
+<main class="inductee-list">
+  <sky-card size="small" *ngFor="let i of inductees">
+    <sky-card-title style="text-align: center">{{i.id}} - {{i.name}}</sky-card-title>
+    <sky-card-content>
+        <sky-avatar
+        name="{{i.name}}"
+        src="{{i.profile}}">
+      </sky-avatar>
+      Class of {{i.year}}
+    </sky-card-content>
+    <sky-card-actions>
+      <button class="sky-btn sky-margin-inline-compact" (click)=resetEvent(summary.event.id)>Full Bio</button>
+    </sky-card-actions>
+  </sky-card>
+</main>

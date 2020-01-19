@@ -1,0 +1,24 @@
+{
+  "app_nav_inductees": {
+    "message": "Inductees"
+  },
+  "app_nav_contact": {
+    "message": "Contact"
+  },
+  "app_nav_guidelines": {
+    "message": "Guidelines"
+  },
+  "app_nav_banquet": {
+    "message": "Banquet"
+  },
+  "app_nav_sponsorship": {
+    "message": "Sponsorship"
+  },
+  "app_nav_home": {
+    "message": "Home"
+  },
+  "home_title": {
+    "message": "SKY UX Template",
+    "_description": "Title for the home component"
+  }
+}
