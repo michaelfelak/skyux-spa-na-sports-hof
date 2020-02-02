@@ -1,7 +1,6 @@
 import {
   Component, OnInit
 } from '@angular/core';
-import { SkyAppAssetsService } from '@skyux/assets';
 
 @Component({
   selector: 'my-home',
@@ -10,7 +9,7 @@ import { SkyAppAssetsService } from '@skyux/assets';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(private assetSvc: SkyAppAssetsService) { }
+  constructor() { }
 
   public ngOnInit() {
   }
