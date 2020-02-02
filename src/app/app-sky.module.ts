@@ -18,6 +18,24 @@ import {
 import {
   SkyNavbarModule
 } from '@skyux/navbar';
+import { RouterModule, Routes } from '@angular/router';
+import { GuidelinesComponent } from './guidelines/guidelines.component';
+import { InducteesComponent } from './inductees/inductees.component';
+import { ContactComponent } from './contact/contact.component';
+import { BanquetComponent } from './banquet/banquet.component';
+
+const routes: Routes = [
+  { path: 'guidelines', component: GuidelinesComponent },
+  { path: 'inductees', component: InducteesComponent },
+  {
+    path: 'contact',
+    component: ContactComponent
+  },
+  {
+    path: 'banquet',
+    component: BanquetComponent
+  }
+];
 
 @NgModule({
   exports: [
@@ -26,6 +44,11 @@ import {
     SkyKeyInfoModule,
     SkyFluidGridModule,
     SkyNavbarModule
+  ],
+  imports: [
+    RouterModule.forRoot(routes,
+      { useHash: true }
+    )
   ]
 })
 export class AppSkyModule { }
