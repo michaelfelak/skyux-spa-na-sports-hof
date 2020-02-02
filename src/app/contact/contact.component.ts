@@ -1,13 +1,14 @@
 import {
-  Component
+  Component, OnInit
 } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'contact-page',
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss']
 })
-export class ContactComponent {
+export class ContactComponent implements OnInit {
   public team: { name: string; email: string; }[] = [
     {
       name: 'Stan Godwin',
@@ -34,4 +35,10 @@ export class ContactComponent {
       email: ''
     }
   ];
+
+  constructor(private titleSvc: Title) { }
+
+  public ngOnInit() {
+    this.titleSvc.setTitle('North Augusta Sports Hall of Fame');
+  }
 }
