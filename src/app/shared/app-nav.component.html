@@ -1,11 +1,7 @@
-<sky-navbar>
-  <sky-navbar-item *ngFor="let n of nav">
-    <a
-      [routerLink]="n.path"
-      [routerLinkActiveOptions]="{exact: true}"
-      routerLinkActive="sky-navbar-item-active"
-    >
-      {{ n.titleKey | skyAppResources }}
-    </a>
-  </sky-navbar-item>
-</sky-navbar>
+<div class="topnav">
+  <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
+  <a routerLink="/inductees" routerLinkActive="active">Inductees</a>
+  <a routerLink="/guidelines" routerLinkActive="active">Guidelines</a>
+  <a routerLink="/sponsorship" routerLinkActive="active">Sponsorship</a>
+  <a routerLink="/contact" routerLinkActive="active">Contact</a>
+</div>

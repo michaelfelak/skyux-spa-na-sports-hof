@@ -8,6 +8,7 @@ import { InducteeList } from './inductee-list';
   templateUrl: './inductees.component.html',
   styleUrls: ['./inductees.component.scss']
 })
+
 export class InducteesComponent {
   public inductees: any;
   constructor(private inducteeList: InducteeList) {

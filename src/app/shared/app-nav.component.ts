@@ -1,5 +1,5 @@
 import {
-  Component
+  Component, Input
 } from '@angular/core';
 
 @Component({
@@ -8,30 +8,10 @@ import {
   styleUrls: ['./app-nav.component.scss']
 })
 export class AppNavComponent {
-  public nav = [
-    {
-      titleKey: 'app_nav_home',
-      path: '/'
-    },
-    {
-      titleKey: 'app_nav_inductees',
-      path: '/inductees'
-    },
-    {
-      titleKey: 'app_nav_guidelines',
-      path: '/guidelines'
-    },
-    {
-      titleKey: 'app_nav_banquet',
-      path: '/banquet'
-    },
-    {
-      titleKey: 'app_nav_sponsorship',
-      path: '/sponsorship'
-    },
-    {
-      titleKey: 'app_nav_contact',
-      path: '/contact'
-    }
-  ];
-}
+  @Input() public isHome: boolean;
+  @Input() public isSponsorship: boolean;
+  @Input() public isInductees: boolean;
+  @Input() public isGuidelines: boolean;
+  @Input() public isContact: boolean;
+  @Input() public isBanquet: boolean;
+ }

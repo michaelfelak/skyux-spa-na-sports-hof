@@ -1,3 +1,11 @@
-.inductee-list{
-  margin: 5%
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  align-content: start;
+  grid-gap: 5px;
+  width: 80%;
+  margin-left: 5%;
+  margin-right: 5%;
+  align-items: center;
+  justify-items: center; /* adjusted */
 }
