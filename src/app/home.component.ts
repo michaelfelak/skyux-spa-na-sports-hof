@@ -9,10 +9,14 @@ import { Title } from '@angular/platform-browser';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-
-  constructor(private titleSvc: Title) { }
+  public brochure: string;
+  constructor(
+    private titleSvc: Title) { }
 
   public ngOnInit() {
     this.titleSvc.setTitle('North Augusta Sports Hall of Fame');
+
+    // this.brochure = this.dom.bypassSecurityTrustResourceUrl(this.assetSvc.getUrl('2019brochure.pdf'));
+    console.log(this.brochure);
   }
 }
