@@ -19,7 +19,6 @@ export class HomeComponent implements OnInit {
     this.titleSvc.setTitle('North Augusta Sports Hall of Fame');
 
     this.bannerImg = this.assetSvc.getUrl('img/banner.jpg');
-    // this.brochure = this.dom.bypassSecurityTrustResourceUrl(this.assetSvc.getUrl('2019brochure.pdf'));
     console.log(this.brochure);
   }
 }

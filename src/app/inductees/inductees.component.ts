@@ -1,6 +1,5 @@
-import { Component } from '@angular/core';
-
-let inductees = require('../../assets/inductees.json');
+import { Component, OnInit } from '@angular/core';
+let inductees = require('./inductees.json');
 
 @Component({
   selector: 'inductees-page',
@@ -8,9 +7,10 @@ let inductees = require('../../assets/inductees.json');
   styleUrls: ['./inductees.component.scss']
 })
 
-export class InducteesComponent {
+export class InducteesComponent implements OnInit {
   public inductees: any;
-  constructor() {
-    Object.assign(this.inductees, inductees.inductees);
+
+  public ngOnInit() {
+    this.inductees = inductees.inductees;
   }
 }

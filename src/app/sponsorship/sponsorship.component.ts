@@ -3,7 +3,7 @@ import {
 } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 
-let sponsors = require('../../assets/sponsors.json');
+let sponsors = require('./sponsors.json');
 
 @Component({
   selector: 'sponsorship-page',
