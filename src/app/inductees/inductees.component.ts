@@ -1,7 +1,6 @@
-import {
-  Component
-} from '@angular/core';
-import { InducteeList } from './inductee-list';
+import { Component } from '@angular/core';
+
+let inductees = require('../../assets/inductees.json');
 
 @Component({
   selector: 'inductees-page',
@@ -11,11 +10,7 @@ import { InducteeList } from './inductee-list';
 
 export class InducteesComponent {
   public inductees: any;
-  constructor(private inducteeList: InducteeList) {
-    this.inductees = this.inducteeList.inductees;
-  }
-
-  public getInductees() {
-    return this.inducteeList.inductees;
+  constructor() {
+    Object.assign(this.inductees, inductees.inductees);
   }
 }

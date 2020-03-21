@@ -8,12 +8,12 @@
         {
             "name": "Meybohm",
             "image": "meybohm.gif",
-            "url": ""
+            "url": "https://www.meybohm.com/"
         },
         {
             "name": "Parks Pharmacy",
-            "image": "parks.gif",
-            "url": ""
+            "image": "parks.png",
+            "url": "https://www.parkspharmacy.com/"
         }
     ]
 }

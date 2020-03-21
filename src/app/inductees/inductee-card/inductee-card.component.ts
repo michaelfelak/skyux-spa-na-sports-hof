@@ -14,13 +14,13 @@ export class InducteeCardComponent implements OnInit {
   @Input() public id: string;
   @Input() public name: string;
   @Input() public image: string;
-  @Input() public bio: string;
+  @Input() public year: string;
   public imagePath: string;
 
   constructor(private assetSvc: SkyAppAssetsService) { }
 
   public ngOnInit() {
-    this.imagePath = this.assetSvc.getUrl('img/' + this.image);
+    this.imagePath = this.assetSvc.getUrl('img/hof/' + this.year + '/' + this.image);
     console.log(this.imagePath);
   }
 

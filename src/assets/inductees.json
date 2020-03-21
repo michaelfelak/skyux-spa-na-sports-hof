@@ -1,95 +1,70 @@
 {
     "inductees": [
-      {
-        "id": 1,
-        "name": "Don Metz",
-        "year": 2006,
-        "profile": "don_metz.jpg"
-      },
-      {
-        "id": 2,
-        "name": "Earl Baynham",
-        "year": 2006
-      },
-      {
-        "id": 3,
-        "name": "Ellen Smith",
-        "year": 2006
-      },
-      {
-        "id": 4,
-        "name": "Jerry Priestly",
-        "year": 2006
-      },
-      {
-        "id": 5,
-        "name": "Micheal Rouse",
-        "year": 2006
-      },
-      {
-        "id": 6,
-        "name": "Hubert Morris",
-        "year": 2011
-      },
-      {
-        "id": 7,
-        "name": "Hugh Eggersman",
-        "year": 2011
-      },
-      {
-        "id": 8,
-        "name": "John Fuzzy Floyd",
-        "year": 2011
-      },
-      {
-        "id": 9,
-        "name": "Matt Campbell",
-        "year": 2011
-      },
-      {
-        "id": 10,
-        "name": "1961 AA State Champion Football Team",
-        "year": 2012
-      },
-      {
-        "id": 11,
-        "name": "Beth Mckie Meyer",
-        "year": 2012
-      },
-      {
-        "id": 12,
-        "name": "Jim Bush",
-        "year": 2012
-      },
-      {
-        "id": 13,
-        "name": "Sammy Twiggs",
-        "year": 2012
-      },
-      {
-        "id": 14,
-        "name": "1949 State Champion Baseball Team",
-        "year": 2013
-      },
-      {
-        "id": 15,
-        "name": "Charles Overstreet",
-        "year": 2013
-      },
-      {
-        "id": 16,
-        "name": "Charlie Williams",
-        "year": 2013
-      },
-      {
-        "id": 17,
-        "name": "Frank Staley",
-        "year": 2013
-      },
-      {
-        "id": 18,
-        "name": "1989 Champs",
-        "year": 2014
-      }
+      {"id": 1,"name": "Larry Baynham","year": 2005,"profile": "larry_baynham.jpg"},
+      {"id": 2,"name": "Charley Britt","year": 2005,"profile": "charley_britt.jpg"},
+      {"id": 3,"name": "Cally Gault","year": 2005,"profile": "cally_gault.jpg"},
+      {"id": 4,"name": "Dr. Gamewell Watson","year": 2005,"profile": "gamewell_watson.jpg"},
+      {"id": 5,"name": "Sam Woodring","year": 2005,"profile": "sam_woodring.jpg"},
+      {"id": 6,"name": "Don Metz","year": 2006,"profile": "don_metz.jpg"},
+      {"id": 7,"name": "Earl Baynham","year": 2006,"profile": "earl_baynham.jpg"},
+      {"id": 8,"name": "Ellen Smith","year": 2006,"profile": "ellen_smith.jpg"},
+      {"id": 9,"name": "Jerry Priestly","year": 2006,"profile": "jerry_priestly.jpg"},
+      {"id": 10,"name": "Micheal Rouse","year": 2006,"profile": "micheal_rouse.jpg"},
+      {"id": 11,"name": "Craig Baynham","year": 2008,"profile": "craig_baynham.jpg"},
+      {"id": 12,"name": "Pat Carpenter","year": 2008,"profile": "pat_carpenter.jpg"},
+      {"id": 13,"name": "Dick Sheridan","year": 2008,"profile": "dick_sheridan.jpg"},
+      {"id": 14,"name": "Ed Stillwell","year": 2008,"profile": "ed_stillwell.jpg"},
+      {"id": 15,"name": "Charlie Waters","year": 2008,"profile": "charlie_waters.jpg"},
+      {"id": 16,"name": "Sammy Anderson","year": 2009,"profile": "sammy_anderson.jpg"},
+      {"id": 17,"name": "Jim Buist","year": 2009,"profile": "jim_buist.jpg"},
+      {"id": 18,"name": "Dick Day","year": 2009,"profile": "dick_day.jpg"},
+      {"id": 19,"name": "Harry Howard","year": 2009,"profile": "harry_howard.jpg"},
+      {"id": 20,"name": "1958 Football Team","year": 2009,"profile": "1958_football.jpg"},
+      {"id": 21,"name": "Pat Collins","year": 2010,"profile": "pat_collins.jpg"},
+      {"id": 22,"name": "Paul Knox","year": 2010,"profile": "paul_knox.jpg"},
+      {"id": 23,"name": "Ralph Sapp","year": 2010,"profile": "ralph_sapp.jpg"},
+      {"id": 24,"name": "Lee Sheridan","year": 2010,"profile": "lee_sheridan.jpg"},
+      {"id": 25,"name": "Hubert Morris","year": 2011,"profile": "hubert_morris.jpg"},
+      {"id": 26,"name": "Hugh Eggersman","year": 2011,"profile": "hugh_eggersman.jpg"},
+      {"id": 27,"name": "John Fuzzy Floyd","year": 2011,"profile": "john_fuzzy_floyd.jpg"},
+      {"id": 28,"name": "Matthew Campbell","year": 2011,"profile": "matthew_campbell.jpg"},
+      {"id": 29,"name": "1961 Football Team","year": 2012,"profile": "1961_football.jpg"},
+      {"id": 30,"name": "Beth Mckie Meyer","profile": "beth_meyer.jpg","year": 2012},
+      {"id": 31,"name": "Jim Bush","year": 2012,"profile": "jim_bush.jpg"},
+      {"id": 32,"name": "Sammy Twiggs","year": 2012,"profile": "sammy_twiggs.jpg"},
+      {"id": 33,"name": "1949 Baseball Team","year": 2013,"profile": "1949_baseball.jpg"},
+      {"id": 34,"name": "Charles Overstreet","year": 2013,"profile": "charles_overstreet.jpg"},
+      {"id": 35,"name": "Charlie Williams","year": 2013,"profile": "charlie_williams.jpg"},
+      {"id": 36,"name": "Frank Staley","year": 2013,"profile": "frank_staley.jpg"},
+      {"id": 37,"name": "1989 Champs","year": 2014,"profile": "1989_champs.jpg"},
+      {"id": 38,"name": "Johnny Harrison","year": 2014,"profile": "johnny_harrison.jpg"},
+      {"id": 39,"name": "Vicki Mann","year": 2014,"profile": "vicki_mann.jpg"},
+      {"id": 40,"name": "Bill Utsey","year": 2014,"profile": "bill_utsey.jpg"},
+      {"id": 41,"name": "1989 Football Team","year": 2014,"profile": "1989_football.jpg"},
+      {"id": 42,"name": "Joseph Houston","year": 2015,"profile": "joseph_houston.jpg"},
+      {"id": 43,"name": "George Parks","year": 2015,"profile": "george_parks.jpg"},
+      {"id": 44,"name": "Allen Simmons","year": 2015,"profile": "allen_simmons.jpg"},
+      {"id": 45,"name": "1964 Baseball Team","year": 2015,"profile": "1964_baseball.jpg"},
+      {"id": 46,"name": "Ned Baynham","year": 2016,"profile": "ned_baynham.jpg"},
+      {"id": 47,"name": "Lenny Best","year": 2016,"profile": "lenny_best.jpg"},
+      {"id": 48,"name": "Rod Greenway","year": 2016,"profile": "rod_greenway.jpg"},
+      {"id": 49,"name": "1973 Golf Team","year": 2016,"profile": "1973_golf.jpg"},
+      {"id": 50,"name": "Randy Cooper","year": 2017,"profile": "randy_cooper.jpg"},
+      {"id": 51,"name": "Al Lown","year": 2017,"profile": "al_lown.jpg"},
+      {"id": 52,"name": "Reggie Merriweather","year": 2017,"profile": "reggie_merriweather.jpg"},
+      {"id": 53,"name": "Jeff Pope","year": 2017,"profile": ".jpg"},
+      {"id": 54,"name": "1979 Volleyball Team","year": 2017,"profile": "1979_volleyball.jpg"},
+      {"id": 55,"name": "Gordon Cox","year": 2018,"profile": "gordon_cox.jpg"},
+      {"id": 56,"name": "Betty Crocker","year": 2018,"profile": "betty_crocker.jpg"},
+      {"id": 57,"name": "Antonio Grant","year": 2018,"profile": "antonio_grant.jpg"},
+      {"id": 58,"name": "1991 Cheerleading Team","year": 2018,"profile": "1991_cheer.jpg"},
+      {"id": 59,"name": "Leigh Pagan","year": 2019,"profile": "leigh_pagan.jpg"},
+      {"id": 60,"name": "Keith Waters","year": 2019,"profile": "keith_waters.jpg"},
+      {"id": 61,"name": "Gerry Sagus","year": 2019,"profile": "gerry_sagus.jpg"},
+      {"id": 62,"name": "1967 Dixie Boys","year": 2019,"profile": "1967_dixie.jpg"},
+      {"id": 63,"name": "Tyrone Walker","year": 2020,"profile": "tyrone_walker.jpg"},
+      {"id": 64,"name": "Fred Vinson","year": 2020,"profile": "fred_vinson.jpg"},
+      {"id": 65,"name": "Geannie Williams Coleman","year": 2020,"profile": "geannie_coleman.jpg"},
+      {"id": 66,"name": "1982 & 1983 Golf Team","year": 2020,"profile": "1982_golf.jpg"}
     ]
   }

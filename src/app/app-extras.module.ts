@@ -5,7 +5,6 @@ import {
 import {
   AppSkyModule
 } from './app-sky.module';
-import { InducteeList } from './inductees/inductee-list';
 import { SkyCardModule } from '@skyux/layout';
 import { SkyAvatarModule } from '@skyux/avatar';
 
@@ -14,9 +13,6 @@ import { SkyAvatarModule } from '@skyux/avatar';
     AppSkyModule,
     SkyCardModule,
     SkyAvatarModule
-  ],
-  providers: [
-    InducteeList
   ]
 })
 export class AppExtrasModule { }

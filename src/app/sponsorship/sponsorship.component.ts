@@ -2,7 +2,8 @@ import {
   Component, OnInit
 } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-import sponsors from '../../assets/sponsors.json';
+
+let sponsors = require('../../assets/sponsors.json');
 
 @Component({
   selector: 'sponsorship-page',
