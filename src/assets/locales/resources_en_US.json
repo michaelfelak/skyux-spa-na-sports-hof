@@ -16,9 +16,5 @@
   },
   "app_nav_home": {
     "message": "Home"
-  },
-  "home_title": {
-    "message": "SKY UX Template",
-    "_description": "Title for the home component"
   }
 }
