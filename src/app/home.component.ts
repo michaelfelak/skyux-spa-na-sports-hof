@@ -10,8 +10,8 @@ import { SkyAppAssetsService } from '@skyux/assets';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  public brochure: string;
- @Input() public bannerImg: string;
+  @Input() public bannerImg: string;
+
   constructor(private assetSvc: SkyAppAssetsService,
     private titleSvc: Title) { }
 
@@ -19,6 +19,5 @@ export class HomeComponent implements OnInit {
     this.titleSvc.setTitle('North Augusta Sports Hall of Fame');
 
     this.bannerImg = this.assetSvc.getUrl('img/banner.jpg');
-    console.log(this.brochure);
   }
 }

@@ -21,7 +21,6 @@ export class InducteeCardComponent implements OnInit {
 
   public ngOnInit() {
     this.imagePath = this.assetSvc.getUrl('img/hof/' + this.year + '/' + this.image);
-    console.log(this.imagePath);
   }
 
   public selectBio() {
