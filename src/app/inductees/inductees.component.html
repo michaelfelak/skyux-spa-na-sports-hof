@@ -1,6 +1,6 @@
 <app-nav [isInductees]="true"></app-nav>
 <div style="text-align: center">
-  <h2>North Augusta Sports Hall of Fame Inductees</h2>
+  <h2 class="header">North Augusta Sports Hall of Fame Inductees</h2>
   <div class="grid-container">
     <div *ngFor="let i of inductees">
       <inductee-card [id]="i.id" [name]="i.name" [image]="i.profile" [year]="i.year"></inductee-card>
