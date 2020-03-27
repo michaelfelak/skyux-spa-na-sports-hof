@@ -23,6 +23,8 @@ import { GuidelinesComponent } from './guidelines/guidelines.component';
 import { InducteesComponent } from './inductees/inductees.component';
 import { ContactComponent } from './contact/contact.component';
 import { BanquetComponent } from './banquet/banquet.component';
+import { SkyFlyoutModule } from '@skyux/flyout';
+import { InducteeFlyoutComponent } from './inductees/inductee-flyout/inductee-flyout.component';
 
 const routes: Routes = [
   { path: 'guidelines', component: GuidelinesComponent },
@@ -43,12 +45,16 @@ const routes: Routes = [
     SkyAlertModule,
     SkyKeyInfoModule,
     SkyFluidGridModule,
-    SkyNavbarModule
+    SkyNavbarModule,
+    SkyFlyoutModule
   ],
   imports: [
     RouterModule.forRoot(routes,
       { useHash: true }
     )
+  ],
+  entryComponents: [
+    InducteeFlyoutComponent
   ]
 })
 export class AppSkyModule { }
