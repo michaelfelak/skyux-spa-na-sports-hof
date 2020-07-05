@@ -18,7 +18,7 @@ export class InducteeFlyoutComponent implements OnInit {
   ) { }
 
   public ngOnInit() {
-    console.log('flyout opened for id: ' + this.context.recordId);
+    console.log(this.context);
     this.imagePath = this.assetSvc.getUrl('img/hof/' + this.context.image + '/profile.jpg');
   }
 }

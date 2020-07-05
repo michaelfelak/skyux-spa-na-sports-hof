@@ -1,7 +1,7 @@
 export class InducteeFlyoutContext {
-    public recordId: string;
+    public recordId: number;
     public name: string;
     public image: string;
-    public year: string;
+    public year: number;
     public images: string[];
 }

@@ -2,7 +2,10 @@
     <div style="text-align: center;">
         <img [src]="imagePath" />
     </div>
-    <button class="sky-btn sky-btn-link-inline" type="button" (click)="onNameClick(id)">
+    <button *ngIf="showFlyout" class="sky-btn sky-btn-link-inline" type="button" (click)="onNameClick(id)">
         {{name}}
     </button>
+    <div *ngIf="!showFlyout">
+        {{name}}
+    </div>
 </div>

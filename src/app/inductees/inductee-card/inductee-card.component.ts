@@ -6,7 +6,9 @@ import { SkyAppAssetsService } from '@skyux/assets';
 import { SkyFlyoutService, SkyFlyoutInstance, SkyFlyoutConfig } from '@skyux/flyout';
 import { InducteeFlyoutContext } from '../inductee-flyout/inductee-flyout.context';
 import { InducteeFlyoutComponent } from '../inductee-flyout/inductee-flyout.component';
-// import { Subject } from 'rxjs';
+import { Inductee } from '../../shared/inductee';
+
+let inductees = require('../inductees.json');
 
 @Component({
   selector: 'inductee-card',
@@ -15,10 +17,13 @@ import { InducteeFlyoutComponent } from '../inductee-flyout/inductee-flyout.comp
 })
 
 export class InducteeCardComponent implements OnInit {
-  @Input() public id: string;
+  @Input() public id: number;
   @Input() public name: string;
   @Input() public image: string;
   @Input() public year: string;
+  public showFlyout: boolean = false;
+  private data: any = inductees.inductees;
+  private inductee: Inductee;
   public imagePath: string;
   public rowHighlightedId: string;
   public flyout: SkyFlyoutInstance<any>;
@@ -27,15 +32,12 @@ export class InducteeCardComponent implements OnInit {
     private flyoutService: SkyFlyoutService) { }
 
   public ngOnInit() {
+    this.inductee = this.getInducteeById(this.id);
     this.imagePath = this.assetSvc.getUrl('img/hof/' + this.image + '/profile.jpg');
   }
 
   public onNameClick(id: string) {
-    let record: InducteeFlyoutContext = new InducteeFlyoutContext();
-    record.recordId = id;
-    record.image = this.image;
-    record.name = this.name;
-    record.year = this.year;
+    let record = this.getRecordFromInductee(this.inductee);
     // this.openRecord(record);
 
     const flyoutConfig: SkyFlyoutConfig = {
@@ -57,6 +59,33 @@ export class InducteeCardComponent implements OnInit {
     this.flyout.closed.subscribe(() => {
       this.flyout = undefined;
     });
+  }
+
+  private getInducteeById(id: number) {
+    return this.data.filter((i: { id: number; }) => {
+      return i.id === id;
+    })[0];
+  }
+
+  private getRecordFromInductee(inductee: Inductee): InducteeFlyoutContext {
+    if (inductee) {
+      let record = new InducteeFlyoutContext();
+      record.image = this.image;
+      record.name = inductee.name;
+      record.year = inductee.year;
+      record.recordId = inductee.id;
+      record.images = this.getImages(this.image);
+      console.log(record);
+      return record;
+    }
+    return undefined;
+  }
+
+  private getImages(path: string): string[] {
+    let v = this.assetSvc.getAllUrls();
+
+    console.log(v);
+    return [];
   }
 
   // private openRecord(record: InducteeFlyoutContext) {
