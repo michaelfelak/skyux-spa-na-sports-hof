@@ -1,11 +1,16 @@
 <div class="grid-item; card">
     <div style="text-align: center;">
-        <img [src]="imagePath" />
+        <img [src]="imagePath" (click)="onNameClick(id)" />
     </div>
-    <button *ngIf="showFlyout" class="sky-btn sky-btn-link-inline" type="button" (click)="onNameClick(id)">
-        {{name}}
-    </button>
-    <div *ngIf="!showFlyout">
-        {{name}}
+    <div *ngIf="bioPresent">
+        <button class="sky-btn sky-btn-link-inline" type="button" (click)="onNameClick(id)">
+            {{name}}
+        </button>
+        <br>
+        <span style="color: green">Has bio</span>
+    </div>
+    <div *ngIf="!bioPresent">
+        {{name}}<br>
+        <span style="color: red">No bio present</span>
     </div>
 </div>

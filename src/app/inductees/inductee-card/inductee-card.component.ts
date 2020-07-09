@@ -7,6 +7,8 @@ import { SkyFlyoutService, SkyFlyoutInstance, SkyFlyoutConfig } from '@skyux/fly
 import { InducteeFlyoutContext } from '../inductee-flyout/inductee-flyout.context';
 import { InducteeFlyoutComponent } from '../inductee-flyout/inductee-flyout.component';
 import { Inductee } from '../../shared/inductee';
+import { Observable } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
 
 let inductees = require('../inductees.json');
 
@@ -21,19 +23,31 @@ export class InducteeCardComponent implements OnInit {
   @Input() public name: string;
   @Input() public image: string;
   @Input() public year: string;
-  public showFlyout: boolean = false;
+  public showFlyout: boolean = true;
   private data: any = inductees.inductees;
   private inductee: Inductee;
   public imagePath: string;
   public rowHighlightedId: string;
   public flyout: SkyFlyoutInstance<any>;
+  public bio: string;
+  public allURLs: any;
+  public bioPresent: boolean;
   // private openFlyoutStream = new Subject<boolean>();
   constructor(private assetSvc: SkyAppAssetsService,
-    private flyoutService: SkyFlyoutService) { }
+    private flyoutService: SkyFlyoutService,
+    private http: HttpClient) { }
 
   public ngOnInit() {
+    this.allURLs = this.assetSvc.getAllUrls();
     this.inductee = this.getInducteeById(this.id);
     this.imagePath = this.assetSvc.getUrl('img/hof/' + this.image + '/profile.jpg');
+    this.bio = this.assetSvc.getUrl('bio/' + this.image + '.txt');
+    this.getBio().subscribe((result: any) => {
+      this.bioPresent = true;
+    },
+      (err: Error) => {
+        this.bioPresent = false;
+      });
   }
 
   public onNameClick(id: string) {
@@ -82,10 +96,14 @@ export class InducteeCardComponent implements OnInit {
   }
 
   private getImages(path: string): string[] {
-    let v = this.assetSvc.getAllUrls();
-
-    console.log(v);
-    return [];
+    let output = [];
+    for (let record in this.allURLs) {
+      if (record.startsWith('img/hof/' + path)) {
+        output.push(record);
+      }
+    }
+    console.log(output);
+    return output;
   }
 
   // private openRecord(record: InducteeFlyoutContext) {
@@ -160,4 +178,8 @@ export class InducteeCardComponent implements OnInit {
   //   }
   //   return false;
   // }
+
+  private getBio(): Observable<any> {
+    return this.http.get<any>(this.assetSvc.getUrl('bio/' + this.image + '.json'));
+  }
 }
