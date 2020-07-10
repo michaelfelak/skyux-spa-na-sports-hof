@@ -89,7 +89,6 @@ export class InducteeCardComponent implements OnInit {
       record.year = inductee.year;
       record.recordId = inductee.id;
       record.images = this.getImages(this.image);
-      console.log(record);
       return record;
     }
     return undefined;
@@ -102,7 +101,6 @@ export class InducteeCardComponent implements OnInit {
         output.push(record);
       }
     }
-    console.log(output);
     return output;
   }
 
