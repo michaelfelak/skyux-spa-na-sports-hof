@@ -14,4 +14,6 @@ export class AppNavComponent {
   @Input() public isGuidelines: boolean;
   @Input() public isContact: boolean;
   @Input() public isBanquet: boolean;
+  @Input() public isBolton: boolean;
+  @Input() public isBrissie: boolean;
  }

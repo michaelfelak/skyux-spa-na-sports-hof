@@ -34,9 +34,10 @@ export class InducteeFlyoutComponent implements OnInit {
     );
 
     for (let record of this.context.images) {
-      this.images.push(this.assetSvc.getUrl(record));
+      if (!record.endsWith('profile.jpg')) {
+        this.images.push(this.assetSvc.getUrl(record));
+      }
     }
-
     this.getBio().subscribe((result: any) => {
       this.p1 = result.p1;
       this.p2 = result.p2;
