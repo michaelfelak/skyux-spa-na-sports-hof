@@ -32,6 +32,7 @@ export class InducteeCardComponent implements OnInit {
   public bio: string;
   public allURLs: any;
   public bioPresent: boolean;
+  public numImages: number;
   // private openFlyoutStream = new Subject<boolean>();
   constructor(private assetSvc: SkyAppAssetsService,
     private flyoutService: SkyFlyoutService,
@@ -42,6 +43,7 @@ export class InducteeCardComponent implements OnInit {
     this.inductee = this.getInducteeById(this.id);
     this.imagePath = this.assetSvc.getUrl('img/hof/' + this.image + '/profile.jpg');
     this.bio = this.assetSvc.getUrl('bio/' + this.image + '.txt');
+    this.numImages = this.getImages(this.image).length;
     this.getBio().subscribe((result: any) => {
       this.bioPresent = true;
     },
