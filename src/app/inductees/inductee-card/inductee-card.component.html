@@ -4,11 +4,11 @@
     </div>
     <div *ngIf="bioPresent">
         <button class="sky-btn sky-btn-link-inline" type="button" (click)="onNameClick(id)">
-            {{name}}
+            {{firstname}} {{lastname}}
         </button>
     </div>
     <div *ngIf="!bioPresent">
-        {{name}}<br>
+        {{firstname}} {{lastname}}<br>
         <span style="color: red">No bio present</span>
     </div>
     <div>

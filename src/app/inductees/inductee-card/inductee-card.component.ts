@@ -20,7 +20,8 @@ let inductees = require('../inductees.json');
 
 export class InducteeCardComponent implements OnInit {
   @Input() public id: number;
-  @Input() public name: string;
+  @Input() public firstname: string;
+  @Input() public lastname: string;
   @Input() public image: string;
   @Input() public year: string;
   public showFlyout: boolean = true;
@@ -87,7 +88,8 @@ export class InducteeCardComponent implements OnInit {
     if (inductee) {
       let record = new InducteeFlyoutContext();
       record.image = this.image;
-      record.name = inductee.name;
+      record.firstname = inductee.firstname;
+      record.lastname = inductee.lastname;
       record.year = inductee.year;
       record.recordId = inductee.id;
       record.images = this.getImages(this.image);
