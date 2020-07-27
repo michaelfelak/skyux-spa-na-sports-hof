@@ -19,6 +19,7 @@ export class InducteeFlyoutComponent implements OnInit {
   public p5: string;
   public p6: string;
   public p7: string;
+  public p8: string;
   public bioPresent: boolean;
   public slideIndex = 2;
 
@@ -34,10 +35,11 @@ export class InducteeFlyoutComponent implements OnInit {
     );
 
     for (let record of this.context.images) {
-      if (!record.endsWith('profile.jpg')) {
+      if (!record.includes('profile.jpg')) {
         this.images.push(this.assetSvc.getUrl(record));
       }
     }
+    console.log(this.images);
     this.getBio().subscribe((result: any) => {
       this.p1 = result.p1;
       this.p2 = result.p2;
@@ -45,7 +47,8 @@ export class InducteeFlyoutComponent implements OnInit {
       this.p4 = result.p4;
       this.p5 = result.p5;
       this.p6 = result.p6;
-      this.p6 = result.p7;
+      this.p7 = result.p7;
+      this.p8 = result.p8;
       this.bioPresent = true;
     },
       (err: Error) => {

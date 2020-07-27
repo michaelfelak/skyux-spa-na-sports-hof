@@ -11,15 +11,15 @@ import { Title } from '@angular/platform-browser';
 export class ContactComponent implements OnInit {
   public team: { name: string; email: string; }[] = [
     {
-      name: 'Stan Godwin',
-      email: ''
-    },
-    {
-      name: 'Ned Baynham',
-      email: ''
-    },
-    {
       name: 'Kyle Smith',
+      email: ''
+    },
+    {
+      name: 'Lark Jones',
+      email: ''
+    },
+    {
+      name: 'Gerry Saggus',
       email: ''
     },
     {
@@ -27,11 +27,11 @@ export class ContactComponent implements OnInit {
       email: ''
     },
     {
-      name: 'Diane Shuler',
+      name: 'Mike Chavous',
       email: ''
     },
     {
-      name: 'Charlie Bush',
+      name: 'Verne Rushton',
       email: ''
     }
   ];
