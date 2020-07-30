@@ -1,4 +1,3 @@
-
 main {
   margin-left: 10%;
   margin-right: 10%;
@@ -6,14 +5,15 @@ main {
   font-size: 16pt;
 }
 
-body, html {
-    height: 100%;
+body,
+html {
+  height: 100%;
 }
 
 /* The hero image */
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/src/app/banner.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("~/app/banner.jpg");
 
   /* Set a specific height */
   height: 50%;

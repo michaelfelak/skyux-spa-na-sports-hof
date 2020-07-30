@@ -5,7 +5,8 @@ import { Title } from '@angular/platform-browser';
 
 @Component({
     selector: 'brissie-award',
-    templateUrl: './brissie.component.html'
+    templateUrl: './brissie.component.html',
+    styleUrls: ['./brissie.component.scss']
 })
 export class BrissieComponent implements OnInit {
 

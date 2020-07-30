@@ -5,7 +5,8 @@ import { Title } from '@angular/platform-browser';
 
 @Component({
     selector: 'bolton-award',
-    templateUrl: './bolton.component.html'
+    templateUrl: './bolton.component.html',
+    styleUrls: ['./bolton.component.scss']
 })
 export class BoltonComponent implements OnInit {
 
