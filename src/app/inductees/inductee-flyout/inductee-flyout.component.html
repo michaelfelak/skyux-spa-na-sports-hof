@@ -1,17 +1,7 @@
 <main>
     <h1>{{context.firstname}} {{context.lastname}}</h1>
     <h3 style="text-align: center;">Class of {{context.year}}</h3>
-    <div style="text-align: center;">
-        <div class="initial">
-            <img [src]="imagePath">
-        </div>
-        <div *ngFor="let m of images">
-            <img class="mySlides" [src]="m">
-        </div>
-        <button class="w3-button w3-black w3-display-left" (click)="plusDivs(-1)">&#10094;</button>
-        <button class="w3-button w3-black w3-display-right" (click)="plusDivs(1)">&#10095;</button>
-    </div>
-
+    <slide-show [imagePath]="imagePath" [images]="images"></slide-show>
     <div style="margin: 15px;">
         <div *ngIf="p1">{{p1}}</div><br *ngIf="p1">
         <div *ngIf="p2">{{p2}}</div><br *ngIf="p2">

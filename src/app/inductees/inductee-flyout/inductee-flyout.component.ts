@@ -21,7 +21,6 @@ export class InducteeFlyoutComponent implements OnInit {
   public p7: string;
   public p8: string;
   public bioPresent: boolean;
-  public slideIndex = 2;
 
   constructor(
     public context: InducteeFlyoutContext,
@@ -58,25 +57,5 @@ export class InducteeFlyoutComponent implements OnInit {
 
   public getBio(): Observable<any> {
     return this.http.get<any>(this.assetSvc.getUrl('bio/' + this.context.image + '.json'));
-  }
-
-  public plusDivs(n: number) {
-    document.getElementsByClassName('initial')[0].setAttribute('style', 'display: none;');
-    this.showDivs(this.slideIndex += n);
-  }
-
-  private showDivs(n: number) {
-    let i;
-    let x = document.getElementsByClassName('mySlides');
-    if (n > x.length) {
-      this.slideIndex = 1;
-    }
-    if (n < 1) {
-      this.slideIndex = x.length;
-    }
-    for (i = 0; i < x.length; i++) {
-      x.item(i).setAttribute('style', 'display: none;');
-    }
-    x[this.slideIndex - 1].setAttribute('style', 'display: block;margin: 0 auto;');
   }
 }
