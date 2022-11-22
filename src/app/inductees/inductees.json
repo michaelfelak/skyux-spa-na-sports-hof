@@ -64,6 +64,10 @@
       {"id": 63,"firstname": "Tyrone", "lastname": "Walker","year": 2020,"profile": "tyrone_walker"},
       {"id": 64,"firstname": "Fred", "lastname": "Vinson","year": 2020,"profile": "fred_vinson"},
       {"id": 65,"firstname": "Geannie Williams", "lastname": "Coleman","year": 2020,"profile": "geannie_williams"},
-      {"id": 66,"firstname": "1982 & 1983", "lastname": "Golf Team","year": 2020,"profile": "1982_golf"}
+      {"id": 66,"firstname": "1982 & 1983", "lastname": "Golf Team","year": 2020,"profile": "1982_golf"},
+      {"id": 67,"firstname": "Darby", "lastname": "Sligh","year": 2021,"profile": "darby_sligh"},
+      {"id": 68,"firstname": "Chris", "lastname": "MacInnis","year": 2021,"profile": "chris_macinnis"},
+      {"id": 69,"firstname": "Lauren", "lastname": "Jones","year": 2021,"profile": "lauren_jones"},
+      {"id": 70,"firstname": "Steve", "lastname": "Mixon","year": 2021,"profile": "steve_mixon"}
     ]
   }
