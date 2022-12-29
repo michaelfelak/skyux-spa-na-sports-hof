@@ -11,7 +11,7 @@ import { Title } from '@angular/platform-browser';
 export class ContactComponent implements OnInit {
   public team: { name: string; email: string; }[] = [
     {
-      name: 'Kyle Smith',
+      name: 'John Potter',
       email: ''
     },
     {
@@ -23,7 +23,7 @@ export class ContactComponent implements OnInit {
       email: ''
     },
     {
-      name: 'Al Lown',
+      name: 'Sammy Anderson',
       email: ''
     },
     {

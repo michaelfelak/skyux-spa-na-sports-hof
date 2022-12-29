@@ -19,7 +19,7 @@ let inductees = require('../inductees.json');
 })
 
 export class InducteeCardComponent implements OnInit {
-  @Input() public id: number;
+  @Input() public id: string;
   @Input() public firstname: string;
   @Input() public lastname: string;
   @Input() public image: string;
@@ -77,8 +77,8 @@ export class InducteeCardComponent implements OnInit {
     });
   }
 
-  private getInducteeById(id: number) {
-    return this.data.filter((i: { id: number; }) => {
+  private getInducteeById(id: string) {
+    return this.data.filter((i: { id: string; }) => {
       return i.id === id;
     })[0];
   }
